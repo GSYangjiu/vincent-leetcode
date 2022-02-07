@@ -34,4 +34,15 @@ public class Problem16 {
         }
         return res;
     }
+
+    public static void main(String[] args) {
+        //int超过最大值 循环赋值
+        int target = -2;
+        int res = Integer.MAX_VALUE - target;
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(res);
+        System.out.println(res - target);
+        System.out.println(Math.abs(res));
+        System.out.println(Math.abs(res - target));
+    }
 }
