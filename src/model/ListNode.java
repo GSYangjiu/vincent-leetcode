@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Vincent
  * @date 2022/1/29 12:04 上午
@@ -23,4 +26,14 @@ public class ListNode {
         this.next = next;
     }
 
+    @Override
+    public String toString() {
+        List<Integer> list = new ArrayList<>();
+        ListNode node = this;
+        while (node != null) {
+            list.add(node.val);
+            node = node.next;
+        }
+        return list.toString();
+    }
 }
